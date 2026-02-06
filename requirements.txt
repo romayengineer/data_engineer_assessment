@@ -1,0 +1,6 @@
+pandas
+pyarrow
+great_expectations==0.18
+pytest
+boto3
+apache-airflow
