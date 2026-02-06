@@ -7,6 +7,9 @@ from datetime import datetime, timedelta
 # Random helper data
 campañas = ["2023/24", "2024/25", "2025/26"]
 
+# Lote IDs
+lote_ids = [f"L{random.randint(10, 100):06d}" for _ in range(10)]
+
 # Generate random rows
 num_rows = 1_000
 start_date = datetime(2024, 1, 1)
@@ -24,7 +27,7 @@ def generate_clima_diario(num_rows):
         writer.writerow(columns)
 
         for i in range(1, num_rows + 1):
-            lote_id = f"L{i:06d}"
+            lote_id = random.choice(lote_ids)
             campaña = random.choice(campañas)
             fecha = (start_date + timedelta(days=i)).strftime("%Y-%m-%d")
 
@@ -52,7 +55,7 @@ def generate_rinde_lotes(num_rows):
         writer.writerow(columns)
 
         for i in range(1, num_rows + 1):
-            lote_id = f"L{i:06d}"
+            lote_id = random.choice(lote_ids)
             campaña = random.choice(campañas)
             fecha = (start_date + timedelta(days=i)).strftime("%Y-%m-%d")
 
