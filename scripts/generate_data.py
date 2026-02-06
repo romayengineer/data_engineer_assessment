@@ -8,10 +8,10 @@ from datetime import datetime, timedelta
 campañas = ["2023/24", "2024/25", "2025/26"]
 
 # Lote IDs
-lote_ids = [f"L{random.randint(10, 100):06d}" for _ in range(10)]
+lote_ids = ["L000011", "L020031", "L021003", "L033022"]
 
 # Generate random rows
-num_rows = 1_000
+num_rows = 500
 start_date = datetime(2024, 1, 1)
 
 
