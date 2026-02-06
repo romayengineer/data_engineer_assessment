@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 campañas = ["2023/24", "2024/25", "2025/26"]
 
 # Generate random rows
-num_rows = 10_000
+num_rows = 1_000
 start_date = datetime(2024, 1, 1)
 
 
