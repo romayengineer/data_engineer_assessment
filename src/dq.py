@@ -1,6 +1,8 @@
-import great_expectations as ge
 
 def get_validator(df):
+    # import here to prevent the dag import to time out
+    import great_expectations as ge
+
     context = ge.get_context()
 
     suite_name = "rinde_suite"
